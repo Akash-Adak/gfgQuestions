@@ -1,7 +1,7 @@
-import java.util.*;
-
 class Solution {
-    public ArrayList<Integer> nextLargerElement(int[] nums) {
+    public ArrayList<Integer> nextGreater(int[] nums) {
+        // code here
+
         int n = nums.length;
         int[] result = new int[n];
         Arrays.fill(result, -1);
@@ -20,5 +20,7 @@ class Solution {
         ArrayList<Integer> ans = new ArrayList<>(n);
         for (int num : result) ans.add(num);
         return ans;
+    
+
     }
 }
